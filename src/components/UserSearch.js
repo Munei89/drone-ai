@@ -8,7 +8,7 @@ import {connect} from 'react-redux';
 class UserSearchComponent extends React.Component {
     render() {
         return (
-            <div>
+            <div className="search-component">
                 <Formik
                     initialValues={{name: ''}}
                     onSubmit={(values, {setSubmitting}) => {

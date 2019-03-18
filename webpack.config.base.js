@@ -23,21 +23,30 @@ module.exports = {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"]
       },
+      // {
+      //   test: /\.svg$/,
+      //   loader: ["svg-inline-loader"]
+      // },
+      // {
+      //   test: /\.png$/,
+      //   use: [
+      //     {
+      //       loader: "url-loader",
+      //       options: {
+      //         mimetype: "image/png"
+      //       }
+      //     }
+      //   ]
+      // },
       {
-        test: /\.svg$/,
-        loader: ["svg-inline-loader"]
-      },
-      {
-        test: /\.png$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: "url-loader",
-            options: {
-              mimetype: "image/png"
-            }
-          }
-        ]
-      }
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
     ]
   },
   plugins: [
