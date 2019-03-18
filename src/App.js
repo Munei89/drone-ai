@@ -23,10 +23,12 @@ class App extends Component {
         <img src={Logo} className="img-responsive" width="132" height="35"/>
         {/* <div className="logo" /> */}
     </nav>
-    <div className="container banner-img">
-      <div className="row">
-        <div className="col-md-12 col-sm-12 col-xs-12 align-center">
-        <img src={Banner1} className="img-responsive"/>
+    <div className="container-fluid">
+      <div className="container banner-img">
+        <div className="row">
+          <div className="col-md-12 col-sm-12 col-xs-12 align-center">
+          <img src={Banner1} className="img-responsive"/>
+          </div>
         </div>
       </div>
     </div>
