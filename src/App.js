@@ -7,6 +7,7 @@ import Logo from './img/drone-logo.svg'
 import { fetchRepos } from './redux/actions'
 import { connect } from 'react-redux'
 import UserSearch from './components/UserSearch';
+import ScrollUpButton from "react-scroll-up-button";
 
 
 class App extends Component {
@@ -22,7 +23,7 @@ class App extends Component {
         <img src={Logo} className="img-responsive" width="132" height="35"/>
         {/* <div className="logo" /> */}
     </nav>
-    <div className="container">
+    <div className="container banner-img">
       <div className="row">
         <div className="col-md-12 col-sm-12 col-xs-12 align-center">
         <img src={Banner1} className="img-responsive"/>
@@ -89,6 +90,14 @@ class App extends Component {
     <footer className="footer">
       <div>Copyright © 2018 Drone.ai. All Rights Reserved.</div>
     </footer>
+       <ScrollUpButton
+          ContainerClassName="back-to-top"
+          TransitionClassName="transition"
+        >
+        <div className="icon-arrow">
+          &nbsp;
+        </div>
+      </ScrollUpButton>
       </div>
     );
   }

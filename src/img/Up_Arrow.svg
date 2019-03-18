@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="12px" viewBox="0 0 19 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Up_Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1280" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1830.000000, -2439.000000)">
+        <g id="Back-Top" transform="translate(1809.000000, 2415.000000)" fill="#333333" fill-rule="nonzero">
+            <path d="M34.0210752,38.5 L34.0210752,40 L37,40 L34.0210752,40 L34.0210752,38.5 Z M34.0210752,38.5 L34.0210752,30 L37,30 L34,27 L34,29.9936759 L26.25,29.9936759 L27,29.9936759 L27,27 L25.5,27 L37,27 L37,37.75 L37,37 L34.0210752,37 L34.0210752,38.5 Z M37,37.75 L37,38.5 L37,37.75 Z M25.5,27 L24,27 L24,29.9936759 L24,27 L25.5,27 Z M24,27 L37,27 L37,40 L34.0210752,40 L34.0210752,29.9936759 L24,29.9936759 L24,27 Z" id="Up_Arrow" transform="translate(30.500000, 33.500000) rotate(-45.000000) translate(-30.500000, -33.500000) "></path>
+        </g>
+    </g>
+</svg>

@@ -50,6 +50,7 @@
     "react-dom": "^16.7.0",
     "react-hot-loader": "^4.6.3",
     "react-redux": "^6.0.1",
+    "react-scroll-up-button": "^1.6.4",
     "redux": "^4.0.1",
     "redux-promise": "^0.6.0",
     "redux-saga": "^1.0.2",
