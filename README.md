@@ -23,7 +23,7 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 $ npm install
-$ node run dev
+$ npm run dev
 ```
 
 For production environments...
