@@ -1,16 +1,14 @@
-export const t = {
-    LOAD_USER_DATA: 'LOAD_USER_DATA',
-    LOAD_USER_DATA_SUCCESS: 'LOAD_USER_DATA_SUCCESS'
-};
+import axios from 'axios'
 
-export const actions = ({
-    loadUserData: name => ({
-        type: t.LOAD_USER_DATA,
-        name
-    }),
+export const FETCH_REPOS = 'fetch_repos'
 
-    loadUserDataSuccess: data => ({
-        type: t.LOAD_USER_DATA_SUCCESS,
-        data
-    })
-});
+const API_URL = 'https://api.github.com/users'
+
+export const fetchRepos = (user) => {
+  const request = axios.get(`${API_URL}/${user}/repos`)
+    .catch(err => { return err.message })
+  return {
+    type: FETCH_REPOS,
+    payload: request
+  }
+}

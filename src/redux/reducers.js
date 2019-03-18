@@ -1,18 +1,8 @@
-import {t} from './actions';
+import { combineReducers } from 'redux'
+import FetchRepos from './reducer_repos'
 
-const initState = {
-    data: null
-};
+const rootReducer = combineReducers({
+  repos: FetchRepos
+})
 
-export const userReducer = (state = initState, action) => {
-    switch (action.type) {
-        case t.LOAD_USER_DATA_SUCCESS:
-            return {
-                ...state,
-                user: action.data
-            };
-
-        default:
-            return state;
-    }
-};
+export default rootReducer

@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import './scss/styles.scss'
 import './App.scss'
-import Banner1 from './img/Banner02.jpg'
+import Banner1 from './img/Banner01.jpg'
+import Banner2 from './img/Banner02.jpg'
 import Logo from './img/drone-logo.svg'
-import {UserSearch} from './components/UserSearch';
+import { fetchRepos } from './redux/actions'
+import { connect } from 'react-redux'
+import UserSearch from './components/UserSearch';
 
 
 class App extends Component {
+
+  onInputChange = () => event => {
+    this.props.fetchRepos(event.target.value)
+  }
+
   render() {
     return (
       <div>
@@ -15,7 +23,14 @@ class App extends Component {
         {/* <div className="logo" /> */}
     </nav>
     <div className="container">
-      <div classname="row">
+      <div className="row">
+        <div className="col-md-12 col-sm-12 col-xs-12 align-center">
+        <img src={Banner1} className="img-responsive"/>
+        </div>
+      </div>
+    </div>
+    <div className="container">
+      <div className="row">
         <div className="col-md-8 col-sm-12 col-xs-12">
           <h1>
           Aerial shot collection - the greatest forests in the world
@@ -32,14 +47,42 @@ class App extends Component {
           </div>
         </div>
         <div className="col-md-4 col-sm-12 col-xs-12">
-            <img src={Banner1} className="img-responsive" />
+            <img src={Banner2} className="img-responsive" />
         </div>
       </div>
     </div>
     <div className="container">
     <div className="row">
+    <div className="col-md-6 col-xs-6 col-sm-6" >
+    <h4>Search By Name</h4>
+    <div className="form-group">
+          <input
+          placeholder="Enter a User's name"
+          onChange={this.onInputChange()}
+          type='text'
+          className="form-control"
+        />
+      </div>
+    </div>
+      
+    </div>
+    <div className="row">
     <div className="col-md-12 col-xs-12 col-sm-12">
-        <UserSearch />
+    <div className="table-responsive">
+        <table className="table table-striped">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Private</th>
+                  <th>Link</th>
+                  <th className="text-right">Size</th>
+              </tr>
+          </thead>
+          <tbody>
+            <UserSearch repos={this.props.repos} />
+          </tbody>
+      </table>
+    </div>
     </div>
     </div>
     </div>
@@ -51,4 +94,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = ({ repos }) => ({
+  repos
+})
+export default connect(mapStateToProps, { fetchRepos })(App)
+

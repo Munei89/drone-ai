@@ -1,12 +1,18 @@
+$text-color: #222222;
+$white: #fff;
+
 .navbar-black {
-  background-color: #000;
+  background-color: $text-color;
   text-align: center;
-  color: #fff;
+  color: $white;
   border-radius:0px;
   box-shadow: 0; 
+  img {
+    display: initial;
+  }
 }
 .sub-heading--quote {
-  color: #222222;
+  color: $text-color;
   font-family: Arial;
   font-size: 22px;
   font-style: italic;
@@ -23,19 +29,19 @@
     line-height: 32px;
   }
 }
-.logo {
-  background: url('/img/drone-logo.png');
-  width: 200px;
-  height: 200px;
-  display: block;
-}
 .search-component {
   margin: 20px 0;
 }
 footer {
   &.footer {
-    background-color: #222222;
-    color: #fff;
+    background-color: $text-color;
+    color: $white;
     padding: 50px 0px;
+  }
+}
+.align-center {
+  text-align: center;
+  img {
+  display: initial;
   }
 }
