@@ -31,7 +31,3 @@ For production environments...
 ```sh
 $ npm run build
 ```
-
- ### Live Demo
- 
- https://drone-ai-reactjs.herokuapp.com/
