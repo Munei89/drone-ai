@@ -1,6 +1,6 @@
-# Drone ai - Reactjs Front End Assessment
+# Drone ai - Reactjs Front End
 
-Drone ai is basic Reactjs Front End Assessment.
+Drone ai is basic Reactjs Front End one page,with a api call to github users repos.
 
 # Features!
 
@@ -11,7 +11,7 @@ Drone ai is basic Reactjs Front End Assessment.
   - webpack
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+Drone ai uses a number of open source projects to work properly:
 
 * React js - HTML enhanced for web apps!
 * Bootstrap - Css Framework
